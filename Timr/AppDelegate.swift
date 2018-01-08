@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import JDCoordinator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	private var rootViewController: UINavigationController!
+	private var appCoordinator: JDAppCoordinator!
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		let windowRect = UIScreen.main.bounds
+		let window = UIWindow(frame: windowRect)
+		let navigationController = UINavigationController()
+		let appCoordinator = AppCoordinator(with: navigationController)
+		
+		self.window = window
+		self.rootViewController = navigationController
+		self.appCoordinator = appCoordinator
+		
+		appCoordinator.start()
+		
+		window.rootViewController = navigationController
+		window.makeKeyAndVisible()
+		
 		return true
 	}
 
@@ -40,7 +56,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationWillTerminate(_ application: UIApplication) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 	}
-
-
 }
 

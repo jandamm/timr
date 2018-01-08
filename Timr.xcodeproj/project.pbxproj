@@ -61,6 +61,7 @@
 		FD60E4D12003FD980064D389 /* TimrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimrUITests.swift; sourceTree = "<group>"; };
 		FD60E4D32003FD980064D389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD60E4E6200405E30064D389 /* JDCoordinator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JDCoordinator.framework; path = Carthage/Build/iOS/JDCoordinator.framework; sourceTree = "<group>"; };
+		FD60E4E8200408850064D389 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				FD60E4B12003FD980064D389 /* AppDelegate.swift */,
+				FD60E4E8200408850064D389 /* AppCoordinator.swift */,
 				FD60E4B82003FD980064D389 /* Assets.xcassets */,
 				FD60E4BA2003FD980064D389 /* LaunchScreen.storyboard */,
 				FD60E4BD2003FD980064D389 /* Info.plist */,
@@ -281,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD60E4E9200408850064D389 /* AppCoordinator.swift in Sources */,
 				FD60E4B22003FD980064D389 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
