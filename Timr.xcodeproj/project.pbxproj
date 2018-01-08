@@ -12,7 +12,9 @@
 		FD60E4BC2003FD980064D389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD60E4BA2003FD980064D389 /* LaunchScreen.storyboard */; };
 		FD60E4C72003FD980064D389 /* TimrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60E4C62003FD980064D389 /* TimrTests.swift */; };
 		FD60E4D22003FD980064D389 /* TimrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60E4D12003FD980064D389 /* TimrUITests.swift */; };
-		FD60E4E7200405E30064D389 /* JDCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD60E4E6200405E30064D389 /* JDCoordinator.framework */; };
+		FD60E4E7200405E30064D389 /* JDCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD60E4E6200405E30064D389 /* JDCoordinator.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		FD60E4E9200408850064D389 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60E4E8200408850064D389 /* AppCoordinator.swift */; };
+		FD60E4EB200412F70064D389 /* JDCoordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD60E4E6200405E30064D389 /* JDCoordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,20 @@
 			remoteInfo = Timr;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD60E4EA200412E90064D389 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD60E4EB200412F70064D389 /* JDCoordinator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FD60E4AE2003FD980064D389 /* Timr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +157,7 @@
 				FD60E4AA2003FD980064D389 /* Sources */,
 				FD60E4AB2003FD980064D389 /* Frameworks */,
 				FD60E4AC2003FD980064D389 /* Resources */,
+				FD60E4EA200412E90064D389 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
