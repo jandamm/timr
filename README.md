@@ -1,2 +1,2 @@
-# timr
+# Timr
 A small Timer App.
