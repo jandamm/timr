@@ -2,7 +2,7 @@
 //  TimrTests.swift
 //  TimrTests
 //
-//  Created by Dammshäuser, Jan, SEVEN PRINCIPLES on 08.01.18.
+//  Created by Jan Dammshäuser on 08.01.18.
 //  Copyright © 2018 Jan Dammshäuser. All rights reserved.
 //
 
