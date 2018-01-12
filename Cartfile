@@ -1,1 +1,2 @@
 github "jandamm/JDCoordinator"
+github "ReactiveX/RxSwift" ~> 4.0

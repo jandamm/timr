@@ -8,6 +8,7 @@
 
 import UIKit
 import JDCoordinator
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

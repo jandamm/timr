@@ -12,9 +12,16 @@
 		FD60E4BC2003FD980064D389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD60E4BA2003FD980064D389 /* LaunchScreen.storyboard */; };
 		FD60E4C72003FD980064D389 /* TimrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60E4C62003FD980064D389 /* TimrTests.swift */; };
 		FD60E4D22003FD980064D389 /* TimrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60E4D12003FD980064D389 /* TimrUITests.swift */; };
-		FD60E4E7200405E30064D389 /* JDCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD60E4E6200405E30064D389 /* JDCoordinator.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		FD60E4E9200408850064D389 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60E4E8200408850064D389 /* AppCoordinator.swift */; };
 		FD60E4EB200412F70064D389 /* JDCoordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD60E4E6200405E30064D389 /* JDCoordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD8A626F20095B7600AB2796 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A626C20095B7100AB2796 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD8A627120095B7600AB2796 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A625F20095AC700AB2796 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD8A627820095B9900AB2796 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A626C20095B7100AB2796 /* RxBlocking.framework */; };
+		FD8A627920095B9900AB2796 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A625F20095AC700AB2796 /* RxCocoa.framework */; };
+		FD8A627C20095B9900AB2796 /* JDCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD60E4E6200405E30064D389 /* JDCoordinator.framework */; };
+		FD8A627E20095BFB00AB2796 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A626020095AC700AB2796 /* RxSwift.framework */; };
+		FD8A627F20095BFD00AB2796 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A626120095AC700AB2796 /* RxTest.framework */; };
+		FD8A628020095C6000AB2796 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A626020095AC700AB2796 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +44,14 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		FD60E4EA200412E90064D389 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FD8A627120095B7600AB2796 /* RxCocoa.framework in Embed Frameworks */,
 				FD60E4EB200412F70064D389 /* JDCoordinator.framework in Embed Frameworks */,
+				FD8A628020095C6000AB2796 /* RxSwift.framework in Embed Frameworks */,
+				FD8A626F20095B7600AB2796 /* RxBlocking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +72,10 @@
 		FD60E4D32003FD980064D389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD60E4E6200405E30064D389 /* JDCoordinator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JDCoordinator.framework; path = Carthage/Build/iOS/JDCoordinator.framework; sourceTree = "<group>"; };
 		FD60E4E8200408850064D389 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FD8A625F20095AC700AB2796 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		FD8A626020095AC700AB2796 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		FD8A626120095AC700AB2796 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		FD8A626C20095B7100AB2796 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD60E4E7200405E30064D389 /* JDCoordinator.framework in Frameworks */,
+				FD8A627E20095BFB00AB2796 /* RxSwift.framework in Frameworks */,
+				FD8A627820095B9900AB2796 /* RxBlocking.framework in Frameworks */,
+				FD8A627920095B9900AB2796 /* RxCocoa.framework in Frameworks */,
+				FD8A627C20095B9900AB2796 /* JDCoordinator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8A627F20095BFD00AB2796 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +162,10 @@
 		FD60E4E5200405E30064D389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD8A626C20095B7100AB2796 /* RxBlocking.framework */,
+				FD8A625F20095AC700AB2796 /* RxCocoa.framework */,
+				FD8A626020095AC700AB2796 /* RxSwift.framework */,
+				FD8A626120095AC700AB2796 /* RxTest.framework */,
 				FD60E4E6200405E30064D389 /* JDCoordinator.framework */,
 			);
 			name = Frameworks;
@@ -483,6 +505,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6N9Z26P656;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TimrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.personal.TimrTests;
@@ -500,6 +526,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6N9Z26P656;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TimrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.personal.TimrTests;
