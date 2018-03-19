@@ -22,6 +22,10 @@
 		FD8A627E20095BFB00AB2796 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A626020095AC700AB2796 /* RxSwift.framework */; };
 		FD8A627F20095BFD00AB2796 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A626120095AC700AB2796 /* RxTest.framework */; };
 		FD8A628020095C6000AB2796 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A626020095AC700AB2796 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD8A6285200B51FF00AB2796 /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A6284200B51FF00AB2796 /* Timing.swift */; };
+		FD8A6287200B54FE00AB2796 /* TimingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A6286200B54FE00AB2796 /* TimingModel.swift */; };
+		FD8A628A200B56D700AB2796 /* TimingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A6289200B56D700AB2796 /* TimingStorage.swift */; };
+		FD8A628C200B59BB00AB2796 /* TimingWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A628B200B59BB00AB2796 /* TimingWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		FD8A626020095AC700AB2796 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		FD8A626120095AC700AB2796 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		FD8A626C20095B7100AB2796 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		FD8A6284200B51FF00AB2796 /* Timing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timing.swift; sourceTree = "<group>"; };
+		FD8A6286200B54FE00AB2796 /* TimingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingModel.swift; sourceTree = "<group>"; };
+		FD8A6289200B56D700AB2796 /* TimingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingStorage.swift; sourceTree = "<group>"; };
+		FD8A628B200B59BB00AB2796 /* TimingWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,8 @@
 		FD60E4B02003FD980064D389 /* Timr */ = {
 			isa = PBXGroup;
 			children = (
+				FD8A6281200B51DB00AB2796 /* Model */,
+				FD8A6288200B56AE00AB2796 /* Persistence */,
 				FD60E4B12003FD980064D389 /* AppDelegate.swift */,
 				FD60E4E8200408850064D389 /* AppCoordinator.swift */,
 				FD60E4B82003FD980064D389 /* Assets.xcassets */,
@@ -169,6 +179,24 @@
 				FD60E4E6200405E30064D389 /* JDCoordinator.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD8A6281200B51DB00AB2796 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD8A6284200B51FF00AB2796 /* Timing.swift */,
+				FD8A6286200B54FE00AB2796 /* TimingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD8A6288200B56AE00AB2796 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				FD8A6289200B56D700AB2796 /* TimingStorage.swift */,
+				FD8A628B200B59BB00AB2796 /* TimingWebService.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +335,10 @@
 			files = (
 				FD60E4E9200408850064D389 /* AppCoordinator.swift in Sources */,
 				FD60E4B22003FD980064D389 /* AppDelegate.swift in Sources */,
+				FD8A628C200B59BB00AB2796 /* TimingWebService.swift in Sources */,
+				FD8A628A200B56D700AB2796 /* TimingStorage.swift in Sources */,
+				FD8A6287200B54FE00AB2796 /* TimingModel.swift in Sources */,
+				FD8A6285200B51FF00AB2796 /* Timing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

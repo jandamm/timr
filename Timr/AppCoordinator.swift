@@ -9,6 +9,12 @@
 import JDCoordinator
 
 class AppCoordinator: JDAppCoordinator {
+	let storage: Storage
+
+	init(with navigationController: UINavigationController, storage: Storage) {
+		self.storage = storage
+		super.init(with: navigationController)
+	}
 	
 	override func start() {
 		super.start()
